@@ -1,5 +1,4 @@
-# Rate-Limiter
-
+# EdgeShield
 A FastAPI project that demonstrates multiple rate-limiting algorithms and exposes Prometheus metrics for observability with Grafana.
 
 LIVE ENDPOINTS TO TEST - https://rate-limiter-tjnd.onrender.com/docs
