@@ -8,6 +8,7 @@ services:
 
   prometheus:
     image: prom/prometheus:v2.53.2
+    platform: linux/arm64/v8
     container_name: rate-limiter-prometheus
     command:
       - "--config.file=/etc/prometheus/prometheus.yml"
@@ -20,6 +21,7 @@ services:
 
   grafana:
     image: grafana/grafana:11.1.4
+    platform: linux/arm64/v8
     container_name: rate-limiter-grafana
     environment:
       - GF_SECURITY_ADMIN_USER=admin
