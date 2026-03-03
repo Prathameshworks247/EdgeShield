@@ -10,6 +10,7 @@ class RateLimit:
     def __init__(self):
         self.interval = 60
         self.limit_per_interval = 60
+        self.lock = threading.Lock()
 
 class RateLimitExceeded(HTTPException):
     def __init__(self, detail="Rate limit exceeded"):

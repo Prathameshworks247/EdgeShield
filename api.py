@@ -10,7 +10,7 @@ def limited(request: Request):
     try:
         if client not in ip_addresses:
             ip_addresses[client] = RateLimitFactory.get_instance("FixedCounterWindow")
-        if ip_addresses[client].allow_request():
+        if ip_addresses[client].allow_request(client):
             return "This is a limited use API"
     except RateLimitExceeded as e:
         raise e
