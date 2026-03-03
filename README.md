@@ -2,6 +2,8 @@
 
 A FastAPI project that demonstrates multiple rate-limiting algorithms and exposes Prometheus metrics for observability with Grafana.
 
+LIVE ENDPOINTS TO TEST - https://rate-limiter-tjnd.onrender.com/docs
+
 ## Features
 - FastAPI API with limited and unlimited endpoints
 - Pluggable rate-limiting algorithms:
